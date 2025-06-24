@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MetaShift VR: Indigenous narratives come alive through mixed reality. Immersion Drives Empathy." />
+  <title>MetaShift VR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terracotta: '#6F4E37',
+            forest: '#1D594E',
+            turquoise: '#1AB6B4',
+          },
+          fontFamily: {
+            headline: ['Montserrat', 'Pretendard', 'sans-serif'],
+            body: ['Noto Sans KR', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .holo-glitch { mix-blend-mode: lighten; filter: contrast(2.9) brightness(1.9) blur(0.5px); }
+  </style>
+</head>
+<body class="font-body bg-[#F9F6F2] text-[#222]">
+  <!-- Navigation -->
+  <nav class="bg-white/90 backdrop-blur-sm fixed w-full z-40 shadow-sm">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <div class="w-10 h-10 bg-terracotta rounded-md flex items-center justify-center text-white font-bold mr-2">
+          MV
+        </div>
+        <span class="text-xl font-bold text-terracotta">MetaShift VR</span>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#problem-solution" class="text-forest hover:text-terracotta transition-colors">Solutions</a>
+        <a href="#value-prop" class="text-forest hover:text-terracotta transition-colors">Values</a>
+        <a href="#testimonials" class="text-forest hover:text-terracotta transition-colors">User Insights & Testimonials</a>
+        <a href="#team" class="text-forest hover:text-terracotta transition-colors">Team</a>
+        <a href="#contact" class="bg-turquoise text-white px-4 py-2 rounded-md hover:bg-forest transition-colors">Contact Us</a>
+      </div>
+      <button class="md:hidden text-forest">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 w-full h-full object-cover holo-glitch" style="background-image: url('hero_image.png'); background-size: cover; background-position: center; z-index:0;"></div>
+    <!-- Holographic Glitch Effect Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-forest/30 mix-blend-overlay"></div>
+    <div class="absolute inset-0 bg-terracotta/10"></div>
+    <!-- Hero Content -->
+    <div class="container mx-auto px-4 z-10 text-center text-white">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-loose drop-shadow-lg">
+        Indigenous Narratives<br />Brought to Life Through Mixed Reality
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+        "Languages may differ, but hearts connect—<span class="text-turquoise font-bold">Immersion Drives Empathy.</span>"
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <button onclick="openVideoModal()" class="bg-turquoise hover:bg-turquoise/80 text-white px-6 py-3 rounded-md transition-colors duration-300 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+          </svg>
+          Watch Demo Video
+        </button>
+        <a href="#contact" class="border-2 border-white hover:bg-white hover:text-forest text-white px-6 py-3 rounded-md transition-colors duration-300">Inquire About Pilot Program</a>
+      </div>
+    </div>
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- Problem → Solution Split -->
+  <section id="problem-solution" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-terracotta">Problems and Solutions</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <!-- Problem Side -->
+        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+          <h3 class="text-2xl font-bold mb-6 text-forest">Current Problems</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="bg-terracotta/10 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-terracotta" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Underrepresentation</h4>
+                <p class="text-gray-600">Indigenous culture and history are not adequately covered in curricula.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-terracotta/10 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-terracotta" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Inaccessibility</h4>
+                <p class="text-gray-600">Access to cultural experiences is limited.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-terracotta/10 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-terracotta" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Disconnection</h4>
+                <p class="text-gray-600">Lack of understanding is exacerbated by generational and cultural divides.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Solution Side -->
+        <div class="bg-forest/5 p-8 rounded-lg shadow-md">
+          <h3 class="text-2xl font-bold mb-6 text-forest">MetaShift VR Solutions</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="bg-turquoise/10 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-turquoise" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" /></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Immersive Storytelling</h4>
+                <p class="text-gray-600">Go beyond the pages and live the story.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-turquoise/10 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-turquoise" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Experiential Learning</h4>
+                <p class="text-gray-600">Deepen understanding through direct experience.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-turquoise/10 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-turquoise" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Cultural Preservation</h4>
+                <p class="text-gray-600">Digitally archiving and sharing priceless heritage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Before/After Comparison Slider -->
+      <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <h3 class="text-xl font-bold p-4 bg-forest text-white text-center">Traditional Education vs. Mixed Reality Experience</h3>
+        <div class="relative h-80 overflow-hidden">
+          <!-- Before Image (Left Side) -->
+          <div class="absolute inset-0 w-full h-full">
+            <img src="placeholder02.png" alt="Traditional education method using textbooks and classroom" class="w-full h-full object-cover object-left" />
+            <div class="absolute top-4 left-4 bg-white/80 px-3 py-1 rounded-md font-bold text-terracotta">Before: Traditional Materials</div>
+          </div>
+          <!-- After Image (Right Side) with Mask -->
+          <div class="absolute inset-0 h-full transition-all duration-300 ease-out" id="afterImgWrap" style="left: 50%;">
+            <img src="placeholder01.png" alt="Mixed reality experiential education with VR headsets" class="w-full h-full object-cover object-right" />
+            <div class="absolute top-4 left-4 bg-turquoise/80 px-3 py-1 rounded-md font-bold text-white">After: MR Experience</div>
+          </div>
+          <!-- Slider Control -->
+          <input type="range" min="0" max="100" value="50" class="absolute bottom-4 left-1/2 -translate-x-1/2 w-2/3 z-30" id="slider" aria-label="Before/After Slider" />
+          <!-- Divider Line -->
+          <div class="absolute top-0 bottom-0 w-1 bg-white z-20 transition-all duration-300 ease-out" id="dividerLine" style="left: 50%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Before/After slider vanilla JS
+    const slider = document.getElementById('slider');
+    const afterImgWrap = document.getElementById('afterImgWrap');
+    const dividerLine = document.getElementById('dividerLine');
+    
+    if (slider && afterImgWrap && dividerLine) {
+      slider.addEventListener('input', function() {
+        const value = this.value;
+        // After 이미지 영역의 시작점을 조정
+        afterImgWrap.style.left = `${value}%`;
+        // 구분선도 같이 이동
+        dividerLine.style.left = `${value}%`;
+      });
+    }
+  </script>
+
+  <!-- Key Value Proposition -->
+  <section id="value-prop" class="py-20 bg-forest/5">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-terracotta">Core Values</h2>
+      <div class="flex flex-col md:flex-row justify-center gap-8">
+        <div class="flex-1 bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300" id="kvp1">
+          <div class="text-3xl font-bold text-turquoise mb-2">Authenticity ✔</div>
+          <div class="text-lg text-gray-700 mb-4">All content is developed in collaboration with Indigenous elders to ensure cultural accuracy.</div>
+          <img src="placeholder03.png" alt="Indigenous elders sharing cultural knowledge with younger generations" class="w-full h-48 object-cover rounded-md mx-auto" />
+        </div>
+        <div class="flex-1 bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300" id="kvp2">
+          <div class="text-3xl font-bold text-turquoise mb-2">Technological Edge ✔</div>
+          <div class="text-lg text-gray-700 mb-4">XR technology delivers an immersive learning experience, letting students actively explore realistic 3D content.</div>
+          <img src="placeholder04.png" alt="Person using advanced XR technology with headset" class="w-full h-48 object-cover rounded-md mx-auto" />
+        </div>
+        <div class="flex-1 bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300" id="kvp3">
+          <div class="text-3xl font-bold text-turquoise mb-2">Scalability ✔</div>
+          <div class="text-lg text-gray-700 mb-4">A solution that can be adapted to various educational environments and cultural contexts.</div>
+          <img src="placeholder05.png" alt="Diverse group of students in educational environment" class="w-full h-48 object-cover rounded-md mx-auto" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // KVP scroll interaction
+    window.addEventListener('scroll', () => {
+      [1,2,3].forEach(i => {
+        const el = document.getElementById(`kvp${i}`);
+        if (el && el.getBoundingClientRect().top < window.innerHeight * 0.7) {
+          el.classList.add('scale-110');
+        } else if (el) {
+          el.classList.remove('scale-110');
+        }
+      });
+    });
+  </script>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 relative overflow-hidden">
+    <!-- Bead Pattern Background -->
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #8B4513 2px, transparent 2px), radial-gradient(circle at 75% 75%, #8B4513 2px, transparent 2px); background-size: 50px 50px;"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-terracotta">User Insights & Testimonials</h2>
+      
+      <div class="relative max-w-4xl mx-auto">
+        <!-- Testimonial Carousel -->
+        <div class="overflow-hidden">
+          <div class="flex transition-transform duration-500 ease-out" id="testimonialContainer">
+            <!-- Testimonial 1 - Yolanda Skelton Interview -->
+            <div class="w-full flex-shrink-0 px-4">
+              <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                <div class="flex justify-center mb-6">
+                  <div class="w-20 h-20 rounded-full overflow-hidden">
+                    <img src="01.svg" alt="Yolanda Skelton - Indigenous textile artist and educator" class="w-full h-full object-cover" />
+                  </div>
+                </div>
+                <blockquote class="text-lg text-gray-700 mb-6 italic">
+                  "We need MR technology to enhance Indigenous storytelling and experiences. There's a lack of technological integration in Indigenous fashion, hunting, canoeing, and drumming education. This could provide greater cultural representation and accessibility for Indigenous perspectives through technology."
+                </blockquote>
+                <div class="text-center">
+                  <h4 class="font-bold text-forest">Yolanda Skelton</h4>
+                  <p class="text-gray-600">Textile Artist, Teacher & Member of House of Hax-be-gwoo-taw, Gitxsan Nation</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="w-full flex-shrink-0 px-4">
+              <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                <div class="flex justify-center mb-6">
+                  <div class="w-20 h-20 rounded-full overflow-hidden">
+                    <img src="02.svg" alt="Chris Park - Elementary school teacher" class="w-full h-full object-cover" />
+                  </div>
+                </div>
+                <blockquote class="text-lg text-gray-700 mb-6 italic">
+                  "Although there has been much work done in the provincial curriculum, it still lacks comprehensive and authentic Indigenous knowledge and perspective. I'm feeling unprepared to teach Indigenous history, culture, or language in a meaningful and respectful way. We need tools to teach holistically."
+                </blockquote>
+                <div class="text-center">
+                  <h4 class="font-bold text-forest">Chris Park</h4>
+                  <p class="text-gray-600">Elementary School Teacher, Coquitlam</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="w-full flex-shrink-0 px-4">
+              <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                <div class="flex justify-center mb-6">
+                  <div class="w-20 h-20 rounded-full overflow-hidden">
+                    <img src="03.svg" alt="Penny Carrtie - Experienced First Nations educator" class="w-full h-full object-cover" />
+                  </div>
+                </div>
+                <blockquote class="text-lg text-gray-700 mb-6 italic">
+                  "There's a lack of digital resources and advanced tools that limits the representation of Indigenous knowledge, histories, and cultures. The absence of Indigenous educators in curriculum development perpetuates gaps in authenticity. Immersive experiences can engage learners of all ages, creating a dynamic and welcoming educational environment."
+                </blockquote>
+                <div class="text-center">
+                  <h4 class="font-bold text-forest">Penny Carrtie</h4>
+                  <p class="text-gray-600">Retired Teacher, 32+ Years in First Nations Education</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <button class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-4 md:-translate-x-8 bg-white/80 hover:bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-md z-10 transition-all" onclick="changeTestimonial(-1)">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-4 md:translate-x-8 bg-white/80 hover:bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-md z-10 transition-all" onclick="changeTestimonial(1)">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Testimonial Indicators -->
+      <div class="flex justify-center mt-8 space-x-2" id="testimonialIndicators">
+        <button class="w-3 h-3 rounded-full transition-all bg-turquoise w-6" onclick="goToTestimonial(0)"></button>
+        <button class="w-3 h-3 rounded-full transition-all bg-gray-300 hover:bg-gray-400" onclick="goToTestimonial(1)"></button>
+        <button class="w-3 h-3 rounded-full transition-all bg-gray-300 hover:bg-gray-400" onclick="goToTestimonial(2)"></button>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Testimonial carousel functionality
+    let currentTestimonial = 0;
+    const totalTestimonials = 3;
+    const testimonialContainer = document.getElementById('testimonialContainer');
+    const testimonialIndicators = document.querySelectorAll('#testimonialIndicators button');
+    
+    function updateTestimonialCarousel() {
+      testimonialContainer.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+      // Update indicators
+      testimonialIndicators.forEach((indicator, index) => {
+        if (index === currentTestimonial) {
+          indicator.classList.add('bg-turquoise', 'w-6');
+          indicator.classList.remove('bg-gray-300');
+        } else {
+          indicator.classList.remove('bg-turquoise', 'w-6');
+          indicator.classList.add('bg-gray-300');
+        }
+      });
+    }
+    
+    function changeTestimonial(direction) {
+      currentTestimonial = (currentTestimonial + direction + totalTestimonials) % totalTestimonials;
+      updateTestimonialCarousel();
+    }
+    
+    function goToTestimonial(testimonialIndex) {
+      currentTestimonial = testimonialIndex;
+      updateTestimonialCarousel();
+    }
+    
+    // Auto-play testimonial carousel
+    setInterval(() => {
+      changeTestimonial(1);
+    }, 6000);
+  </script>
+
+  <!-- Team Snapshot -->
+  <section id="team" class="py-20 bg-forest/5">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-forest">Meet Our Team</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <!-- Team Member 1 - CEO -->
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+          <div class="flex justify-center mb-6">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
+              <img src="t06.jpg" alt="Jihyeon Song - CEO" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-forest mb-2">Jihyeon Song</h3>
+          <p class="text-turquoise font-semibold mb-2">CEO</p>
+          <p class="text-gray-600 text-sm">Leads overall strategy and decision-making, ensuring alignment with company goals.</p>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+          <div class="flex justify-center mb-6">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
+              <img src="t02.jpg" alt="Boram Hong - CMO" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-forest mb-2">Boram Hong</h3>
+          <p class="text-turquoise font-semibold mb-2">CMO</p>
+          <p class="text-gray-600 text-sm">Oversees technology development, ensuring innovative and secure solutions.</p>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+          <div class="flex justify-center mb-6">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
+              <img src="t03.png" alt="Sangun Park - CSO" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-forest mb-2">Sangun Park</h3>
+          <p class="text-turquoise font-semibold mb-2">CSO</p>
+          <p class="text-gray-600 text-sm">Drives long-term strategy and identifies growth opportunities.</p>
+        </div>
+        
+        <!-- Team Member 4 -->
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+          <div class="flex justify-center mb-6">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
+              <img src="t04.jpg" alt="Byoungjun Moon - CFO" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-forest mb-2">Byoungjun Moon</h3>
+          <p class="text-turquoise font-semibold mb-2">CFO</p>
+          <p class="text-gray-600 text-sm">Manages financial planning, budgeting, and resource allocation.</p>
+        </div>
+        
+        <!-- Team Member 5 -->
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+          <div class="flex justify-center mb-6">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
+              <img src="t05.jpg" alt="Jihye Jeong - COO" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-forest mb-2">Jihye Jeong</h3>
+          <p class="text-turquoise font-semibold mb-2">COO</p>
+          <p class="text-gray-600 text-sm">Handles daily operations, ensuring efficiency and on-time execution.</p>
+        </div>
+        
+        <!-- Team Member 6 - Business Advisor -->
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+          <div class="flex justify-center mb-6">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
+              <img src="t01.jpg" alt="Soo Ryun Yoon - Business Advisor" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-forest mb-2">Soo Ryun Yoon</h3>
+          <p class="text-turquoise font-semibold mb-2">Business Advisor</p>
+          <p class="text-gray-600 text-sm">Provides strategic guidance on market trends and business development.</p>
+        </div>
+      </div>
+      
+
+    </div>
+  </section>
+  
+
+
+
+
+  <!-- Contact & Footer -->
+  <section id="contact" class="bg-gray-900 text-white">
+    <!-- Contact Section -->
+    <div class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto text-center">
+          <h3 class="text-3xl md:text-4xl font-bold mb-8 text-turquoise">Connect With Us</h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-turquoise/20 rounded-lg flex items-center justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-turquoise" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h4 class="font-semibold mb-2">Email</h4>
+              <p class="text-gray-300">metashiftvr.ceo@gmail.com</p>
+            </div>
+            
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-turquoise/20 rounded-lg flex items-center justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-turquoise" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h4 class="font-semibold mb-2">Location</h4>
+              <p class="text-gray-300">Vancouver, BC, Canada</p>
+            </div>
+            
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-turquoise/20 rounded-lg flex items-center justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-turquoise" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 class="font-semibold mb-2">Response Time</h4>
+              <p class="text-gray-300">Within 24 hours</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0 text-center md:text-left">
+            <h3 class="text-xl font-bold text-turquoise mb-2">MetaShift VR</h3>
+            <p class="text-gray-400 text-sm">
+              Transforming Indigenous education through immersive virtual reality experiences.
+            </p>
+          </div>
+          <div class="text-center md:text-right">
+            <p class="text-gray-400 text-sm">
+              © 2024 MetaShift VR. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full max-h-[90vh]">
+      <button onclick="closeVideoModal()" class="absolute -top-12 right-0 text-white hover:text-gray-300 text-2xl font-bold z-10">
+        &times;
+      </button>
+      <div class="relative bg-black rounded-lg overflow-hidden">
+        <video id="modalVideo" controls class="w-full h-auto max-h-[80vh]">
+          <source src="hero_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Video modal functionality
+    function openVideoModal() {
+      document.getElementById('videoModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      // Start playing the video
+      const video = document.getElementById('modalVideo');
+      video.play();
+    }
+    
+    function closeVideoModal() {
+      document.getElementById('videoModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+      // Pause the video
+      const video = document.getElementById('modalVideo');
+      video.pause();
+      video.currentTime = 0;
+    }
+    
+    // Close modal when clicking outside
+    document.getElementById('videoModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeVideoModal();
+      }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !document.getElementById('videoModal').classList.contains('hidden')) {
+        closeVideoModal();
+      }
+    });
+  </script>
+</body>
+</html> 
