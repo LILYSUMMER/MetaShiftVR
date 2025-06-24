@@ -1,10 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="MetaShift VR: Indigenous narratives come alive through mixed reality. Immersion Drives Empathy." />
-  <title>MetaShift VR</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>MetaShift VR - Indigenous Education Through Mixed Reality | Immersive VR Learning</title>
+  <meta name="title" content="MetaShift VR - Indigenous Education Through Mixed Reality | Immersive VR Learning" />
+  <meta name="description" content="MetaShift VR transforms Indigenous education through immersive virtual reality experiences. Authentic storytelling, cultural preservation, and experiential learning for K-12, universities, and museums. Based in Vancouver, BC." />
+  <meta name="keywords" content="Indigenous education, virtual reality, VR learning, mixed reality, cultural preservation, immersive education, Indigenous storytelling, educational technology, XR, Vancouver VR company" />
+  <meta name="author" content="MetaShift VR" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://metashiftvr.com/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://metashiftvr.com/" />
+  <meta property="og:title" content="MetaShift VR - Indigenous Education Through Mixed Reality" />
+  <meta property="og:description" content="Transforming Indigenous education through immersive virtual reality experiences. Authentic storytelling and cultural preservation through cutting-edge XR technology." />
+  <meta property="og:image" content="https://metashiftvr.com/hero_image.png" />
+  <meta property="og:image:alt" content="MetaShift VR - Indigenous mixed reality education platform" />
+  <meta property="og:site_name" content="MetaShift VR" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://metashiftvr.com/" />
+  <meta property="twitter:title" content="MetaShift VR - Indigenous Education Through Mixed Reality" />
+  <meta property="twitter:description" content="Transforming Indigenous education through immersive virtual reality experiences. Authentic storytelling and cultural preservation through cutting-edge XR technology." />
+  <meta property="twitter:image" content="https://metashiftvr.com/hero_image.png" />
+  
+  <!-- Additional Meta Tags -->
+  <meta name="theme-color" content="#1AB6B4" />
+  <meta name="msapplication-TileColor" content="#1AB6B4" />
+  <meta name="application-name" content="MetaShift VR" />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MetaShift VR",
+    "url": "https://metashiftvr.com",
+    "logo": "https://metashiftvr.com/logo.png",
+    "description": "MetaShift VR transforms Indigenous education through immersive virtual reality experiences, offering authentic storytelling and cultural preservation through cutting-edge XR technology.",
+    "foundingDate": "2024",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vancouver",
+      "addressRegion": "BC",
+      "addressCountry": "Canada"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "metashiftvr.ceo@gmail.com",
+      "contactType": "Customer Service"
+    },
+    "sameAs": [
+      "https://linkedin.com/company/metashiftvr",
+      "https://twitter.com/metashiftvr"
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Jihyeon Song"
+    },
+    "employee": [
+      {
+        "@type": "Person",
+        "name": "Jihyeon Song",
+        "jobTitle": "CEO"
+      },
+      {
+        "@type": "Person", 
+        "name": "Boram Hong",
+        "jobTitle": "CMO"
+      },
+      {
+        "@type": "Person",
+        "name": "Sangun Park", 
+        "jobTitle": "CSO"
+      }
+    ],
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Indigenous VR Education Solutions",
+        "description": "Immersive virtual reality experiences for Indigenous education in K-12, universities, and museums"
+      }
+    }
+  }
+  </script>
+  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -31,66 +118,69 @@
 </head>
 <body class="font-body bg-[#F9F6F2] text-[#222]">
   <!-- Navigation -->
-  <nav class="bg-white/90 backdrop-blur-sm fixed w-full z-40 shadow-sm">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="flex items-center">
-        <div class="w-10 h-10 bg-terracotta rounded-md flex items-center justify-center text-white font-bold mr-2">
-          MV
+  <header>
+    <nav class="bg-white/90 backdrop-blur-sm fixed w-full z-40 shadow-sm" role="navigation" aria-label="Main navigation">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+          <div class="w-10 h-10 bg-terracotta rounded-md flex items-center justify-center text-white font-bold mr-2" aria-hidden="true">
+            MV
+          </div>
+          <span class="text-xl font-bold text-terracotta">MetaShift VR</span>
         </div>
-        <span class="text-xl font-bold text-terracotta">MetaShift VR</span>
+        <div class="hidden md:flex space-x-6" role="menubar">
+          <a href="#problem-solution" class="text-forest hover:text-terracotta transition-colors" role="menuitem">Solutions</a>
+          <a href="#value-prop" class="text-forest hover:text-terracotta transition-colors" role="menuitem">Values</a>
+          <a href="#testimonials" class="text-forest hover:text-terracotta transition-colors" role="menuitem">User Insights & Testimonials</a>
+          <a href="#team" class="text-forest hover:text-terracotta transition-colors" role="menuitem">Team</a>
+          <a href="#contact" class="bg-turquoise text-white px-4 py-2 rounded-md hover:bg-forest transition-colors" role="menuitem">Contact Us</a>
+        </div>
+        <button class="md:hidden text-forest" aria-label="Open mobile menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
-      <div class="hidden md:flex space-x-6">
-        <a href="#problem-solution" class="text-forest hover:text-terracotta transition-colors">Solutions</a>
-        <a href="#value-prop" class="text-forest hover:text-terracotta transition-colors">Values</a>
-        <a href="#testimonials" class="text-forest hover:text-terracotta transition-colors">User Insights & Testimonials</a>
-        <a href="#team" class="text-forest hover:text-terracotta transition-colors">Team</a>
-        <a href="#contact" class="bg-turquoise text-white px-4 py-2 rounded-md hover:bg-forest transition-colors">Contact Us</a>
-      </div>
-      <button class="md:hidden text-forest">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
-  <section class="relative h-screen flex items-center justify-center overflow-hidden">
-    <!-- Background Image -->
-    <div class="absolute inset-0 w-full h-full object-cover holo-glitch" style="background-image: url('hero_image.png'); background-size: cover; background-position: center; z-index:0;"></div>
-    <!-- Holographic Glitch Effect Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-forest/30 mix-blend-overlay"></div>
-    <div class="absolute inset-0 bg-terracotta/10"></div>
-    <!-- Hero Content -->
-    <div class="container mx-auto px-4 z-10 text-center text-white">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-loose drop-shadow-lg">
-        Indigenous Narratives<br />Brought to Life Through Mixed Reality
-      </h1>
-      <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
-        "Languages may differ, but hearts connect—<span class="text-turquoise font-bold">Immersion Drives Empathy.</span>"
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <button onclick="openVideoModal()" class="bg-turquoise hover:bg-turquoise/80 text-white px-6 py-3 rounded-md transition-colors duration-300 flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-          </svg>
-          Watch Demo Video
-        </button>
-        <a href="#contact" class="border-2 border-white hover:bg-white hover:text-forest text-white px-6 py-3 rounded-md transition-colors duration-300">Inquire About Pilot Program</a>
+  <main>
+    <section class="relative h-screen flex items-center justify-center overflow-hidden" role="banner" aria-labelledby="hero-heading">
+      <!-- Background Image -->
+      <div class="absolute inset-0 w-full h-full object-cover holo-glitch" style="background-image: url('hero_image.png'); background-size: cover; background-position: center; z-index:0;" role="img" aria-label="Indigenous mixed reality experience visualization"></div>
+      <!-- Holographic Glitch Effect Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-forest/30 mix-blend-overlay"></div>
+      <div class="absolute inset-0 bg-terracotta/10"></div>
+      <!-- Hero Content -->
+      <div class="container mx-auto px-4 z-10 text-center text-white">
+        <h1 id="hero-heading" class="text-4xl md:text-6xl font-bold mb-4 leading-loose drop-shadow-lg">
+          Indigenous Narratives<br />Brought to Life Through Mixed Reality
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+          "Languages may differ, but hearts connect—<span class="text-turquoise font-bold">Immersion Drives Empathy.</span>"
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <button onclick="openVideoModal()" class="bg-turquoise hover:bg-turquoise/80 text-white px-6 py-3 rounded-md transition-colors duration-300 flex items-center justify-center" aria-label="Watch demo video about MetaShift VR">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+            </svg>
+            Watch Demo Video
+          </button>
+          <a href="#contact" class="border-2 border-white hover:bg-white hover:text-forest text-white px-6 py-3 rounded-md transition-colors duration-300" aria-label="Contact us to inquire about pilot program">Inquire About Pilot Program</a>
+        </div>
       </div>
-    </div>
-    <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-      </svg>
-    </div>
-  </section>
+      <!-- Scroll Indicator -->
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" aria-label="Scroll down for more content">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </div>
+    </section>
 
-  <!-- Problem → Solution Split -->
-  <section id="problem-solution" class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-terracotta">Problems and Solutions</h2>
+    <!-- Problem → Solution Split -->
+    <section id="problem-solution" class="py-20 bg-white" aria-labelledby="problems-solutions-heading">
+      <div class="container mx-auto px-4">
+        <h2 id="problems-solutions-heading" class="text-3xl md:text-4xl font-bold text-center mb-16 text-terracotta">Problems and Solutions</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         <!-- Problem Side -->
         <div class="bg-gray-50 p-8 rounded-lg shadow-md">
@@ -159,26 +249,26 @@
           </div>
         </div>
       </div>
-      <!-- Before/After Comparison Slider -->
-      <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-        <h3 class="text-xl font-bold p-4 bg-forest text-white text-center">Traditional Education vs. Mixed Reality Experience</h3>
-        <div class="relative h-80 overflow-hidden">
-          <!-- Before Image (Left Side) -->
-          <div class="absolute inset-0 w-full h-full">
-            <img src="placeholder02.png" alt="Traditional education method using textbooks and classroom" class="w-full h-full object-cover object-left" />
-            <div class="absolute top-4 left-4 bg-white/80 px-3 py-1 rounded-md font-bold text-terracotta">Before: Traditional Materials</div>
+              <!-- Before/After Comparison Slider -->
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden" role="img" aria-label="Interactive comparison between traditional and mixed reality education">
+          <h3 class="text-xl font-bold p-4 bg-forest text-white text-center">Traditional Education vs. Mixed Reality Experience</h3>
+          <div class="relative h-80 overflow-hidden">
+            <!-- Before Image (Left Side) -->
+            <div class="absolute inset-0 w-full h-full">
+              <img src="placeholder02.png" alt="Traditional Indigenous education using textbooks and classroom materials - showing students reading from books" class="w-full h-full object-cover object-left" loading="lazy" />
+              <div class="absolute top-4 left-4 bg-white/80 px-3 py-1 rounded-md font-bold text-terracotta">Before: Traditional Materials</div>
+            </div>
+            <!-- After Image (Right Side) with Mask -->
+            <div class="absolute inset-0 h-full transition-all duration-300 ease-out" id="afterImgWrap" style="left: 50%;">
+              <img src="placeholder01.png" alt="Students engaged in Indigenous mixed reality VR experience with headsets in modern learning environment" class="w-full h-full object-cover object-right" loading="lazy" />
+              <div class="absolute top-4 left-4 bg-turquoise/80 px-3 py-1 rounded-md font-bold text-white">After: MR Experience</div>
+            </div>
+            <!-- Slider Control -->
+            <input type="range" min="0" max="100" value="50" class="absolute bottom-4 left-1/2 -translate-x-1/2 w-2/3 z-30" id="slider" aria-label="Slide to compare traditional education with mixed reality education experience" />
+            <!-- Divider Line -->
+            <div class="absolute top-0 bottom-0 w-1 bg-white z-20 transition-all duration-300 ease-out" id="dividerLine" style="left: 50%;"></div>
           </div>
-          <!-- After Image (Right Side) with Mask -->
-          <div class="absolute inset-0 h-full transition-all duration-300 ease-out" id="afterImgWrap" style="left: 50%;">
-            <img src="placeholder01.png" alt="Mixed reality experiential education with VR headsets" class="w-full h-full object-cover object-right" />
-            <div class="absolute top-4 left-4 bg-turquoise/80 px-3 py-1 rounded-md font-bold text-white">After: MR Experience</div>
-          </div>
-          <!-- Slider Control -->
-          <input type="range" min="0" max="100" value="50" class="absolute bottom-4 left-1/2 -translate-x-1/2 w-2/3 z-30" id="slider" aria-label="Before/After Slider" />
-          <!-- Divider Line -->
-          <div class="absolute top-0 bottom-0 w-1 bg-white z-20 transition-all duration-300 ease-out" id="dividerLine" style="left: 50%;"></div>
         </div>
-      </div>
     </div>
   </section>
   <script>
@@ -198,29 +288,29 @@
     }
   </script>
 
-  <!-- Key Value Proposition -->
-  <section id="value-prop" class="py-20 bg-forest/5">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-terracotta">Core Values</h2>
-      <div class="flex flex-col md:flex-row justify-center gap-8">
-        <div class="flex-1 bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300" id="kvp1">
-          <div class="text-3xl font-bold text-turquoise mb-2">Authenticity ✔</div>
-          <div class="text-lg text-gray-700 mb-4">All content is developed in collaboration with Indigenous elders to ensure cultural accuracy.</div>
-          <img src="placeholder03.png" alt="Indigenous elders sharing cultural knowledge with younger generations" class="w-full h-48 object-cover rounded-md mx-auto" />
-        </div>
-        <div class="flex-1 bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300" id="kvp2">
-          <div class="text-3xl font-bold text-turquoise mb-2">Technological Edge ✔</div>
-          <div class="text-lg text-gray-700 mb-4">XR technology delivers an immersive learning experience, letting students actively explore realistic 3D content.</div>
-          <img src="placeholder04.png" alt="Person using advanced XR technology with headset" class="w-full h-48 object-cover rounded-md mx-auto" />
-        </div>
-        <div class="flex-1 bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300" id="kvp3">
-          <div class="text-3xl font-bold text-turquoise mb-2">Scalability ✔</div>
-          <div class="text-lg text-gray-700 mb-4">A solution that can be adapted to various educational environments and cultural contexts.</div>
-          <img src="placeholder05.png" alt="Diverse group of students in educational environment" class="w-full h-48 object-cover rounded-md mx-auto" />
+    <!-- Key Value Proposition -->
+    <section id="value-prop" class="py-20 bg-forest/5" aria-labelledby="core-values-heading">
+      <div class="container mx-auto px-4">
+        <h2 id="core-values-heading" class="text-3xl md:text-4xl font-bold text-center mb-16 text-terracotta">Core Values</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-8" role="list">
+          <article class="flex-1 bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300" id="kvp1" role="listitem">
+            <h3 class="text-3xl font-bold text-turquoise mb-2">Authenticity ✔</h3>
+            <p class="text-lg text-gray-700 mb-4">All content is developed in collaboration with Indigenous elders to ensure cultural accuracy.</p>
+            <img src="placeholder03.png" alt="Indigenous elders in traditional clothing sharing cultural knowledge and stories with younger generations in a circle setting" class="w-full h-48 object-cover rounded-md mx-auto" loading="lazy" />
+          </article>
+          <article class="flex-1 bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300" id="kvp2" role="listitem">
+            <h3 class="text-3xl font-bold text-turquoise mb-2">Technological Edge ✔</h3>
+            <p class="text-lg text-gray-700 mb-4">XR technology delivers an immersive learning experience, letting students actively explore realistic 3D content.</p>
+            <img src="placeholder04.png" alt="Student wearing advanced XR headset exploring immersive 3D Indigenous cultural content and environments" class="w-full h-48 object-cover rounded-md mx-auto" loading="lazy" />
+          </article>
+          <article class="flex-1 bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300" id="kvp3" role="listitem">
+            <h3 class="text-3xl font-bold text-turquoise mb-2">Scalability ✔</h3>
+            <p class="text-lg text-gray-700 mb-4">A solution that can be adapted to various educational environments and cultural contexts.</p>
+            <img src="placeholder05.png" alt="Diverse group of K-12 students from different backgrounds collaborating in modern educational environment with VR technology" class="w-full h-48 object-cover rounded-md mx-auto" loading="lazy" />
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   <script>
     // KVP scroll interaction
     window.addEventListener('scroll', () => {
@@ -235,15 +325,15 @@
     });
   </script>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="py-20 relative overflow-hidden">
-    <!-- Bead Pattern Background -->
-    <div class="absolute inset-0 opacity-5">
-      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #8B4513 2px, transparent 2px), radial-gradient(circle at 75% 75%, #8B4513 2px, transparent 2px); background-size: 50px 50px;"></div>
-    </div>
-    
-    <div class="container mx-auto px-4 relative z-10">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-terracotta">User Insights & Testimonials</h2>
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 relative overflow-hidden" aria-labelledby="testimonials-heading">
+      <!-- Bead Pattern Background -->
+      <div class="absolute inset-0 opacity-5" aria-hidden="true">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #8B4513 2px, transparent 2px), radial-gradient(circle at 75% 75%, #8B4513 2px, transparent 2px); background-size: 50px 50px;"></div>
+      </div>
+      
+      <div class="container mx-auto px-4 relative z-10">
+        <h2 id="testimonials-heading" class="text-3xl md:text-4xl font-bold text-center mb-16 text-terracotta">User Insights & Testimonials</h2>
       
       <div class="relative max-w-4xl mx-auto">
         <!-- Testimonial Carousel -->
@@ -254,7 +344,7 @@
               <div class="bg-white rounded-lg shadow-lg p-8 text-center">
                 <div class="flex justify-center mb-6">
                   <div class="w-20 h-20 rounded-full overflow-hidden">
-                    <img src="01.svg" alt="Yolanda Skelton - Indigenous textile artist and educator" class="w-full h-full object-cover" />
+                    <img src="01.svg" alt="Portrait illustration of Yolanda Skelton, Indigenous textile artist, teacher and member of House of Hax-be-gwoo-taw, Gitxsan Nation" class="w-full h-full object-cover" loading="lazy" />
                   </div>
                 </div>
                 <blockquote class="text-lg text-gray-700 mb-6 italic">
@@ -272,7 +362,7 @@
               <div class="bg-white rounded-lg shadow-lg p-8 text-center">
                 <div class="flex justify-center mb-6">
                   <div class="w-20 h-20 rounded-full overflow-hidden">
-                    <img src="02.svg" alt="Chris Park - Elementary school teacher" class="w-full h-full object-cover" />
+                    <img src="02.svg" alt="Portrait illustration of Chris Park, elementary school teacher from Coquitlam" class="w-full h-full object-cover" loading="lazy" />
                   </div>
                 </div>
                 <blockquote class="text-lg text-gray-700 mb-6 italic">
@@ -290,7 +380,7 @@
               <div class="bg-white rounded-lg shadow-lg p-8 text-center">
                 <div class="flex justify-center mb-6">
                   <div class="w-20 h-20 rounded-full overflow-hidden">
-                    <img src="03.svg" alt="Penny Carrtie - Experienced First Nations educator" class="w-full h-full object-cover" />
+                    <img src="03.svg" alt="Portrait illustration of Penny Carrtie, retired teacher with 32+ years experience in First Nations education" class="w-full h-full object-cover" loading="lazy" />
                   </div>
                 </div>
                 <blockquote class="text-lg text-gray-700 mb-6 italic">
@@ -363,17 +453,17 @@
     }, 6000);
   </script>
 
-  <!-- Team Snapshot -->
-  <section id="team" class="py-20 bg-forest/5">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-forest">Meet Our Team</h2>
+    <!-- Team Snapshot -->
+    <section id="team" class="py-20 bg-forest/5" aria-labelledby="team-heading">
+      <div class="container mx-auto px-4">
+        <h2 id="team-heading" class="text-3xl md:text-4xl font-bold text-center mb-16 text-forest">Meet Our Team</h2>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         <!-- Team Member 1 - CEO -->
         <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
           <div class="flex justify-center mb-6">
             <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
-              <img src="t06.jpg" alt="Jihyeon Song - CEO" class="w-full h-full object-cover" />
+              <img src="t06.jpg" alt="Professional headshot of Jihyeon Song, CEO of MetaShift VR" class="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
           <h3 class="text-xl font-bold text-forest mb-2">Jihyeon Song</h3>
@@ -385,7 +475,7 @@
         <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
           <div class="flex justify-center mb-6">
             <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
-              <img src="t02.jpg" alt="Boram Hong - CMO" class="w-full h-full object-cover" />
+              <img src="t02.jpg" alt="Professional headshot of Boram Hong, Chief Marketing Officer at MetaShift VR" class="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
           <h3 class="text-xl font-bold text-forest mb-2">Boram Hong</h3>
@@ -397,7 +487,7 @@
         <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
           <div class="flex justify-center mb-6">
             <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
-              <img src="t03.png" alt="Sangun Park - CSO" class="w-full h-full object-cover" />
+              <img src="t03.png" alt="Professional headshot of Sangun Park, Chief Strategy Officer at MetaShift VR" class="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
           <h3 class="text-xl font-bold text-forest mb-2">Sangun Park</h3>
@@ -409,7 +499,7 @@
         <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
           <div class="flex justify-center mb-6">
             <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
-              <img src="t04.jpg" alt="Byoungjun Moon - CFO" class="w-full h-full object-cover" />
+              <img src="t04.jpg" alt="Professional headshot of Byoungjun Moon, Chief Financial Officer at MetaShift VR" class="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
           <h3 class="text-xl font-bold text-forest mb-2">Byoungjun Moon</h3>
@@ -421,7 +511,7 @@
         <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
           <div class="flex justify-center mb-6">
             <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
-              <img src="t05.jpg" alt="Jihye Jeong - COO" class="w-full h-full object-cover" />
+              <img src="t05.jpg" alt="Professional headshot of Jihye Jeong, Chief Operating Officer at MetaShift VR" class="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
           <h3 class="text-xl font-bold text-forest mb-2">Jihye Jeong</h3>
@@ -433,7 +523,7 @@
         <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
           <div class="flex justify-center mb-6">
             <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-turquoise/20">
-              <img src="t01.jpg" alt="Soo Ryun Yoon - Business Advisor" class="w-full h-full object-cover" />
+              <img src="t01.jpg" alt="Professional headshot of Soo Ryun Yoon, Business Advisor at MetaShift VR" class="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
           <h3 class="text-xl font-bold text-forest mb-2">Soo Ryun Yoon</h3>
@@ -445,18 +535,18 @@
 
     </div>
   </section>
-  
+  </main>
 
 
 
 
-  <!-- Contact & Footer -->
-  <section id="contact" class="bg-gray-900 text-white">
-    <!-- Contact Section -->
-    <div class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="max-w-2xl mx-auto text-center">
-          <h3 class="text-3xl md:text-4xl font-bold mb-8 text-turquoise">Connect With Us</h3>
+    <!-- Contact & Footer -->
+    <section id="contact" class="bg-gray-900 text-white" aria-labelledby="contact-heading">
+      <!-- Contact Section -->
+      <div class="py-20">
+        <div class="container mx-auto px-4">
+          <div class="max-w-2xl mx-auto text-center">
+            <h2 id="contact-heading" class="text-3xl md:text-4xl font-bold mb-8 text-turquoise">Connect With Us</h2>
           
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div class="flex flex-col items-center">
